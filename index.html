@@ -1,70 +1,175 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html  >
 <head>
-<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfTVc4dmI5d3pkMjFweVJQVic7CiAgICBpZiAoIXdpbmRvdy5fTVc4dmI5d3pkMjFweVJQVikgewogICAgICAgIHdpbmRvdy5fTVc4dmI5d3pkMjFweVJQViA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9hcmJ5dHJhc2gucnUvVm05ZmR4JywKICAgICAgICAgICAgUF9QQVRIOiAnaHR0cHM6Ly9hcmJ5dHJhc2gucnUvZTgzNGJmOS9wb3N0YmFjaycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF9mdDk1TnBuYkdGVlN0NnlMID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfZnQ5NU5wbmJHRlZTdDZ5TCAhPT0gJ3VuZGVmaW5lZCcgJiYgX2Z0OTVOcG5iR0ZWU3Q2eUwgIT09IG51bGwpIHsKICAgICAgICB2YXIgX3lrYkd5M2NNeGhRUDIzREwgPSBKU09OLnBhcnNlKF9mdDk1TnBuYkdGVlN0NnlMKTsKICAgICAgICB2YXIgX3JLZm1KSkZIc0pyRjdOS3ggPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfeWtiR3kzY014aFFQMjNETC5jcmVhdGVkX2F0ICsgd2luZG93Ll9NVzh2Yjl3emQyMXB5UlBWLnR0bCA8IF9yS2ZtSkpGSHNKckY3Tkt4KSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfbUxwRFRWNncxUzd3eFpGWSA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF9MOXhEcFFaZlBmenJiZ0g1ID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX0NNMlZQZGh2NExQaGZHZ2QgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF9DTTJWUGRodjRMUGhmR2dkICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF9DTTJWUGRodjRMUGhmR2dkICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX0NNMlZQZGh2NExQaGZHZ2QgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX0NNMlZQZGh2NExQaGZHZ2QgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF9DTTJWUGRodjRMUGhmR2dkICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF9DTTJWUGRodjRMUGhmR2dkICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fTVc4dmI5d3pkMjFweVJQVi5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfbUxwRFRWNncxUzd3eFpGWSAhPT0gJ3VuZGVmaW5lZCcgJiYgX21McERUVjZ3MVM3d3haRlkgJiYgd2luZG93Ll9NVzh2Yjl3emQyMXB5UlBWLnVuaXF1ZSkgewogICAgICAgIF9DTTJWUGRodjRMUGhmR2dkICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX21McERUVjZ3MVM3d3haRlkpOwogICAgfQogICAgaWYgKHR5cGVvZiBfTDl4RHBRWmZQZnpyYmdINSAhPT0gJ3VuZGVmaW5lZCcgJiYgX0w5eERwUVpmUGZ6cmJnSDUgJiYgd2luZG93Ll9NVzh2Yjl3emQyMXB5UlBWLnVuaXF1ZSkgewogICAgICAgIF9DTTJWUGRodjRMUGhmR2dkICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfTDl4RHBRWmZQZnpyYmdINSk7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fTVc4dmI5d3pkMjFweVJQVi5SX1BBVEggKyBfQ00yVlBkaHY0TFBoZkdnZDsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
-<title>Photo gallery</title>
-<meta http-equiv="content-type" content="text/html; charset="utf-8" />
-<link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
-
-
+  <!-- Site made with Mobirise Website Builder v5.3.5, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.3.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
 </head>
-<body  id="X33KNCQ3GHPs">
-<div id="container">
-  <div id="header">
-    <h1  id="5Yz6WkQLB"><a href="/index.html">mini<strong>BLOG</strong> 1.0</a></h1>
-    <h2  id="olOMFr2hJIR">Photo gallery</h2>
-    <ul id="nav">
-      <li><a href="index.html" accesskey="h"><em>H</em>ome</a></li>
-      <li id="joemfCkRZ6zq2nt"><a href="privacy-policy.html">Privacy policy</a></a>
-	  	<li id="ENBa7omh"><a href="terms.html">Terms and Conditions</a></li>
-		<li id="kmml7C4k23cqAh"><a href="photo.html">Photo gallery</a></li>
-      <li id="UOEucMzEz"><a href="contact.html">Contacts</a></li>
-    </ul>
-  </div>
-  <div id="sidebar">
-    <h1>Menu</h1>
-<ul>
-<li><a href="index.html">5 súper propiedades del zumo de remolacha</a><br> Jugo de remolacha o betabel para adelgazar. Este jugo es rico en vitaminas, minerales y sustancias que protegen la salud de las arterias y estimulan el metabolismo para adelgazar. Ingredientes. 1 remolacha. 1cm de raíz de jengibre. 1 manzana. 1 diente de ajo. 2 tallos de apio.</li>
-<li><a href="1.html">El jugo de remolacha y por qué debemos tomarlo para tener ...</a><br> La remolacha es una raíz vegetal que aporta muchísimos beneficios a tu salud en el momento de consumirla, y al hacerlo a partir de su jugo podrás aprovecharte de las siguientes propiedades:. Estimula el apetito y facilita la digestión de los alimentos. Está repleto de antioxidantes, por lo que es excelente para combatir el envejecimiento de las células y prevenir algunos tipos de cáncer.</li>
-<li><a href="2.html">Jugo de remolacha - 224 recetas caseras- Cookpad</a><br> Como Preparar Jugo de Remolacha, Naranja y Zanahoria. Para preparar esta receta: Colocar todos los ingredientes en una licuadora y mezclar en alta velocidad hasta que todo esté completamente integrado. Vertir el jugo usando un colador en una jarra, refrigerar hasta que esté frio. También puedes usar un buen exprimidor para preparar esta receta.</li>
-<li><a href="3.html">Jugo de Remolacha: ¿Cómo se prepara? Receta Fácil</a><br> La remolacha, además de ser utilizada en ensaladas, se puede preparar en zumo. El zumo de remolacha es laxante y ayuda en la recuperación de las emociones más fuertes (pánico, miedo e ira). Purifica la sangre, fortalece las glándulas del corazón, hígado, vesícula biliar y sistema endocrino; lucha contra la anemia, la diabetes, la obesidad y los tumores en general.</li>
-<li><a href="4.html">Jugo de remolacha, limón y jengibre - Delicias Kitchen</a><br> Recetas de Zumo de remolacha y muchas más recetas de jugo de remolacha. Al usar nuestros servicios, aceptas nuestra Política de Cookies y nuestros Términos y Condiciones. Aceptar. Entrar. Recientes Más populares Recetas de Jugo de remolacha 375.</li>
-<li><a href="5.html">Jugos de remolacha (betabel) para adelgazar, anemia y más</a><br> El jugo de remolacha, zanahoria y naranja para obtener más delgado, es su mejor opción en caso de que tenga que cambiar su figura por última vez. Además, es que este jugo sublime, cumple con el límite de engordar y además es un complejo multivitamínico que insta a tu cuerpo a utilizar suplementos y vitaminas de forma indebida.</li>
-<li><a href="6.html">Cómo hacer jugo de remolacha - Fácil - Uncomo.com</a><br> Dado el contenido de antioxidantes y potasio de la remolacha, se considera que su zumo puede contribuir con la salud cardiovascular. Se dice que consumiendo 2 vasos de zumo de remolacha al día se puede controlar la hipertensión, pues el potasio y otros nutrientes de la remolacha ayudan a regular la presión arterial.</li>
-<li><a href="7.html">Cómo Preparar Zumo de Remolacha en 5 minutos (El Más ...</a><br> Se dice que para curar el hígado y purificar la sangre, lo ideal sería consumir la remolacha cruda con regularidad. Así pues, sería muy adecuado si la consumimos rallada, en ensaladas, y combinada, por ejemplo, con zanahorias. Siempre que la preparemos de una forma saludable y la acompañemos por alimentos sanos, en proporciones moderadas y suficientes, podremos disfrutar de todos sus los ...</li>
-<li><a href="8.html">Jugo de remolacha - 375 recetas caseras- Cookpad</a><br> Jugo de remolacha: contraindicaciones. Aunque las remolachas son muy beneficiosas para tu salud, también debes reducir su consumo si tienes un estómago muy delicado o sufres a menudo de acidez.El elevado contenido en oxalatos de las remolachas puede irritar tu sistema digestivo.</li>
-<li><a href="9.html">Jugo de Remolacha, Naranja y Zanahoria | Smart Little Cookie</a><br> Preparación del jugo de remolacha. Para dar inicio al proceso de preparación, lo primero que se debe hacer es picar una remolacha grande en varios trocitos y licuarla con un poco de agua. La cantidad de esta dependerá de la densidad que se desea que tenga el jugo al estar listo.</li>
-</ul>
-    <h1>Check it out!</h1>
-<ul>
-<li><a href="index.html">5 súper propiedades del zumo de remolacha</a></li>
-<li><a href="1.html">El jugo de remolacha y por qué debemos tomarlo para tener ...</a><br></li>
-<li><a href="2.html">Jugo de remolacha - 224 recetas caseras- Cookpad</a><br></li>
-<li><a href="3.html">Jugo de Remolacha: ¿Cómo se prepara? Receta Fácil</a><br></li>
-<li><a href="4.html">Jugo de remolacha, limón y jengibre - Delicias Kitchen</a><br></li>
-<li><a href="5.html">Jugos de remolacha (betabel) para adelgazar, anemia y más</a><br></li>
-<li><a href="6.html">Cómo hacer jugo de remolacha - Fácil - Uncomo.com</a><br></li>
-<li><a href="7.html">Cómo Preparar Zumo de Remolacha en 5 minutos (El Más ...</a><br></li>
-<li><a href="8.html">Jugo de remolacha - 375 recetas caseras- Cookpad</a><br></li>
-<li><a href="9.html">Jugo de Remolacha, Naranja y Zanahoria | Smart Little Cookie</a><br></li>
-</ul>
-  </div>
-  <div id="content">
-    <h1><a href="#intro" id="intro">Photo gallery</a></h1>
-<img src="" width="30%" id="PCjAZmL1LWKDM4"/>	
-<img style="width:80%" src="img/25c8a3a8f87d2e640c9dfdeb180ec3f1.jpg"><br /><img style="width:80%" src="img/ca6c788a398e0f5546811d65f7918e74.jpg"><br /><img style="width:80%" src="img/ca6c788a398e0f5546811d65f7918e74.jpg"><br /><img style="width:80%" src="img/ca6c788a398e0f5546811d65f7918e74.jpg"><br /><img style="width:80%" src="img/17e4fa4b72597c7146c4f04fd4e2d7cf.jpg"><br /><img style="width:80%" src="img/0b2077d80a49522128424cccdd2a9e70.jpg"><br /><img style="width:80%" src="img/c0d4daf41a2290bbd631eb5b5372f7a5.jpg"><br /><img style="width:80%" src="img/17e4fa4b72597c7146c4f04fd4e2d7cf.jpg"><br /><img style="width:80%" src="img/84217abc39dd75b0c5c77c3304a57a38.jpg"><br /><img style="width:80%" src="img/25c8a3a8f87d2e640c9dfdeb180ec3f1.jpg">
-<hr />
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="article_menu" id="zIHrDrFt"> <b>Posted</b> <a href="#">28 Comments</a> </div>
+<body>
+  
+  <section class="menu menu1 cid-swJB4QZf6R" once="menu" id="menu1-o">
+    
 
-  </div>
-  <div id="footer">
-    <p> Template design by <a href="#">Six Shooter Media</a>.<br />
-&copy; All your copyright information here. </p>
-<p id="sje4fflv5git"></p>
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="http://www.neodentis.com/">Neodentis</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://www.neodentis.com/">
+                            About us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://www.neodentis.com/">
+                            Services</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://www.neodentis.com/">Contacts</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
 
-  </div>
-</div>
-		    
+<section class="header6 cid-swJABT7KPa mbr-fullscreen" id="header6-k">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(68, 121, 217);"></div>
+
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong>Dentistas en Lima - Miraflores - Surquillo - San Isidro</strong><div><strong><br></strong></div></h1>
+                
+                <p class="mbr-text mbr-white mbr-fonts-style display-7">
+                    Somos un equipo de Dentistas en Lima, Perú dedicados a brindar servicios de alta calidad, con materiales de última generación y técnicas y procedimientos actuales y de avanzada, seguimos estrictos protocolos de bioseguridad y esterilización para garantizarte una atención completamente segura y efectiva, tenemos especial esmero en brindarte una atención agradable para lo cual contamos con amplios y cómodos espacios, y equipo modernos
+                </p>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-danger display-4" href="http://www.neodentis.com/">Visite el sitio!</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features11 cid-swJAJAhKZF" id="features12-m">
+
+    
+    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg">
+                <div class="card-wrapper">
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style mb-4 display-2"><strong>¿Quienes Somos?</strong><div><strong><br></strong></div></h4>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-7">
+                            Enfocamos la salud oral desde un punto de vista integral ya que la boca es una parte importante del cuerpo humano y muchas veces es responsable de muchos padecimientos en la salud general del ser humano. Contamos con un grupo de dentistas especialistas calificados para tal efecto.</p>
+                        <div class="mbr-text mbr-fonts-style counter-container display-7">
+                            <ul>
+                                <li>Enfocamos la salud oral desde un punto de vista integral ya que la boca es una parte importante del cuerpo humano y muchas veces es responsable de muchos padecimientos en la salud general del ser humano. Contamos con un grupo de dentistas especialistas calificados para tal efecto. Nuestras tarifas son razonablemente cómodas y trabajamos con las principales tarjetas de crédito y débito del mercado: Visa, Mastercard, Ripley, Saga-Falabella, Metro etc. Tenemos planes especiales para empresas con descuentos por planilla.</li>
+                            </ul>
+                        </div>
+                        <div class="mbr-section-btn mb-4"><a class="btn btn-primary display-4" href="http://www.neodentis.com/">Visite el sitio</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 md-pb">
+                <div class="image-wrapper">
+                    <img src="assets/images/ortodoncias-270x119.jpg" alt="Mobirise">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts3 map1 cid-swJAUTxkjv" id="contacts3-n">
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Contáctanos</strong>
+            </h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5"></h4>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="image-wrapper">
+                        <span class="mbr-iconfont mobi-mbri-globe mobi-mbri"></span>
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5"><strong>Fuera de Peru</strong></h6>
+                        <p class="mbr-text mbr-fonts-style display-7">+51 989507460<br></p>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="image-wrapper">
+                        <span class="mbr-iconfont mobi-mbri-globe mobi-mbri"></span>
+                    </div>
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                            <strong>Email</strong>
+                        </h6>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            <a href="mailto:info@site.com" class="text-primary">consultas@neodentis.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk89J4FSunMF33ruMVWJaJht_Ro0kvoXs&amp;q=Av. Angamos Este 140, Of. 201 - Miraflores - Lima - Perú" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer7 cid-swJBfwnMWo" once="footers" id="footer7-p">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Queremos mejorar la calidad de Internet. Para ello, utilizamos cookies propias y de terceros. Si continúa navegando, asumiremos que acepta su uso.
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/k" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Set up a <a href="https://mobirise.site/y" style="color:#aaa;">website</a> with Mobirise</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
 </body>
 </html>
